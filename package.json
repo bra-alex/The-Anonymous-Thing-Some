@@ -1,0 +1,14 @@
+{
+  "name": "the-anonymous-thing-some",
+  "version": "1.0.0",
+  "description": "This is a 2x4 rip off of the anonymous thing some",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "anonymous"
+  ],
+  "author": "Dross & Bouncy",
+  "license": "ISC"
+}
