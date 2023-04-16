@@ -17,11 +17,11 @@ async function addMessage({ userId, message }: { userId: string; message: string
 }
 
 async function fetchMessages(userId: string) {
-  const user = await UserModel.findOne({ userId })
+  const userMessages = await UserModel.findOne({ userId }, { messages: 1 })
 
-  if (!user) throw new Error('User does not exist')
+  if (!userMessages) throw new Error('User does not exist')
 
-  return user.messages
+  return userMessages
 }
 
 export { createUser, addMessage, fetchMessages }
